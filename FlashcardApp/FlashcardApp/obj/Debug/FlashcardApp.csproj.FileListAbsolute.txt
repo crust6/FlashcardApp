@@ -8,3 +8,4 @@ C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.c
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.exe
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.pdb
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmHomePage.resources
+C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmFlashcards.resources
