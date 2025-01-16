@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|c:\\__students\\xu\\flashcardapp\\flashcardapp\\flashcardapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|c:\\__students\\xu\\flashcardapp\\flashcardapp\\flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|c:\\__students\\xu\\flashcardapp\\flashcardapp\\flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|c:\\__students\\xu\\flashcardapp\\flashcardapp\\flashcardapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,16 +22,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmHomePage.cs",
+              "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmHomePage.cs",
+              "RelativeDocumentMoniker": "FlashcardApp\\frmHomePage.cs",
+              "ToolTip": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmHomePage.cs",
+              "RelativeToolTip": "FlashcardApp\\frmHomePage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvxgAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T17:51:24.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs [Design]",
+              "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\Form2.cs",
+              "RelativeDocumentMoniker": "FlashcardApp\\Form2.cs",
+              "ToolTip": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\Form2.cs [Design]",
+              "RelativeToolTip": "FlashcardApp\\Form2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T17:50:56.651Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\Form1.cs",
-              "RelativeDocumentMoniker": "FlashcardApp\\Form1.cs",
-              "ToolTip": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\Form1.cs [Design]",
-              "RelativeToolTip": "FlashcardApp\\Form1.cs [Design]",
+              "Title": "frmHomePage.cs [Design]",
+              "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmHomePage.cs",
+              "RelativeDocumentMoniker": "FlashcardApp\\frmHomePage.cs",
+              "ToolTip": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmHomePage.cs [Design]",
+              "RelativeToolTip": "FlashcardApp\\frmHomePage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T17:43:57.839Z",
               "EditorCaption": " [Design]"
