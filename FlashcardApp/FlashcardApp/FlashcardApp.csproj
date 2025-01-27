@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmCreateEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCreateEdit.Designer.cs">
+      <DependentUpon>frmCreateEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFlashcards.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCreateEdit.resx">
+      <DependentUpon>frmCreateEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmFlashcards.resx">
       <DependentUpon>frmFlashcards.cs</DependentUpon>
     </EmbeddedResource>

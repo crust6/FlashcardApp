@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace FlashcardApp
 {
-    public partial class frmFlashcards : Form
+    public partial class frmCreateEdit : Form
     {
-        public frmFlashcards()
+        public frmCreateEdit()
         {
             InitializeComponent();
         }
 
-        private void txtFlashcardsFlashcardID_TextChanged(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
