@@ -45,6 +45,7 @@
             this.btnFlashcardsToHome.TabIndex = 9;
             this.btnFlashcardsToHome.Text = "To Home";
             this.btnFlashcardsToHome.UseVisualStyleBackColor = false;
+            this.btnFlashcardsToHome.Click += new System.EventHandler(this.btnFlashcardsToHome_Click);
             // 
             // btnFlashcardsEdit
             // 
@@ -67,6 +68,7 @@
             this.btnFlashcardsCreate.TabIndex = 11;
             this.btnFlashcardsCreate.Text = "Create a Flashcard";
             this.btnFlashcardsCreate.UseVisualStyleBackColor = false;
+            this.btnFlashcardsCreate.Click += new System.EventHandler(this.btnFlashcardsCreate_Click);
             // 
             // txtFlashcardsFlashcardID
             // 
@@ -101,6 +103,7 @@
             this.Controls.Add(this.btnFlashcardsToHome);
             this.Name = "frmFlashcards";
             this.Text = "Flashcards";
+            this.Load += new System.EventHandler(this.frmFlashcards_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

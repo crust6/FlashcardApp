@@ -79,6 +79,7 @@
             this.btnHomePageTakeQuiz.TabIndex = 5;
             this.btnHomePageTakeQuiz.Text = "Take Quiz";
             this.btnHomePageTakeQuiz.UseVisualStyleBackColor = false;
+            this.btnHomePageTakeQuiz.Click += new System.EventHandler(this.btnHomePageTakeQuiz_Click);
             // 
             // btnHomePageQuizResults
             // 
@@ -90,6 +91,7 @@
             this.btnHomePageQuizResults.TabIndex = 6;
             this.btnHomePageQuizResults.Text = "Quiz Results";
             this.btnHomePageQuizResults.UseVisualStyleBackColor = false;
+            this.btnHomePageQuizResults.Click += new System.EventHandler(this.btnHomePageQuizResults_Click);
             // 
             // btnHomePageToFlashcards
             // 
@@ -101,6 +103,7 @@
             this.btnHomePageToFlashcards.TabIndex = 7;
             this.btnHomePageToFlashcards.Text = "To Flashcards";
             this.btnHomePageToFlashcards.UseVisualStyleBackColor = false;
+            this.btnHomePageToFlashcards.Click += new System.EventHandler(this.btnHomePageToFlashcards_Click);
             // 
             // btnHomePageExit
             // 
@@ -112,6 +115,7 @@
             this.btnHomePageExit.TabIndex = 8;
             this.btnHomePageExit.Text = "Exit";
             this.btnHomePageExit.UseVisualStyleBackColor = false;
+            this.btnHomePageExit.Click += new System.EventHandler(this.btnHomePageExit_Click);
             // 
             // label2
             // 
@@ -120,9 +124,10 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(304, 252);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(247, 29);
+            this.label2.Size = new System.Drawing.Size(290, 29);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Take a Practice Quiz: ";
+            this.label2.Text = "Total Flashcards Created:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -131,9 +136,9 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(304, 336);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(247, 29);
+            this.label3.Size = new System.Drawing.Size(240, 29);
             this.label3.TabIndex = 10;
-            this.label3.Text = "Take a Practice Quiz: ";
+            this.label3.Text = "Total Quizzes Taken:";
             // 
             // lblHomePageFlashcardsCreated
             // 

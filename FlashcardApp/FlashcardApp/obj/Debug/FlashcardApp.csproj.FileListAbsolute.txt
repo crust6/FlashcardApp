@@ -9,3 +9,6 @@ C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.e
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.pdb
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmHomePage.resources
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmFlashcards.resources
+C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmQuiz.resources
+C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmCreateEdit.resources
+C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmQuizResults.resources
