@@ -43,6 +43,7 @@
             this.btnQuizSubmit.TabIndex = 11;
             this.btnQuizSubmit.Text = "Submit";
             this.btnQuizSubmit.UseVisualStyleBackColor = false;
+            this.btnQuizSubmit.Click += new System.EventHandler(this.btnQuizSubmit_Click);
             // 
             // btnQuizCancel
             // 
@@ -54,6 +55,7 @@
             this.btnQuizCancel.TabIndex = 12;
             this.btnQuizCancel.Text = "Cancel";
             this.btnQuizCancel.UseVisualStyleBackColor = false;
+            this.btnQuizCancel.Click += new System.EventHandler(this.btnQuizCancel_Click);
             // 
             // lblQuizCategoryName
             // 

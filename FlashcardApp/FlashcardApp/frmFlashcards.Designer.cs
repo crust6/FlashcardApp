@@ -57,6 +57,7 @@
             this.btnFlashcardsEdit.TabIndex = 10;
             this.btnFlashcardsEdit.Text = "Edit";
             this.btnFlashcardsEdit.UseVisualStyleBackColor = false;
+            this.btnFlashcardsEdit.Click += new System.EventHandler(this.btnFlashcardsEdit_Click);
             // 
             // btnFlashcardsCreate
             // 
@@ -73,7 +74,7 @@
             // txtFlashcardsFlashcardID
             // 
             this.txtFlashcardsFlashcardID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFlashcardsFlashcardID.Location = new System.Drawing.Point(629, 513);
+            this.txtFlashcardsFlashcardID.Location = new System.Drawing.Point(676, 513);
             this.txtFlashcardsFlashcardID.Name = "txtFlashcardsFlashcardID";
             this.txtFlashcardsFlashcardID.Size = new System.Drawing.Size(78, 29);
             this.txtFlashcardsFlashcardID.TabIndex = 12;
@@ -84,7 +85,7 @@
             // txtFlashcardsEnterValidID
             // 
             this.txtFlashcardsEnterValidID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFlashcardsEnterValidID.Location = new System.Drawing.Point(483, 513);
+            this.txtFlashcardsEnterValidID.Location = new System.Drawing.Point(530, 513);
             this.txtFlashcardsEnterValidID.Name = "txtFlashcardsEnterValidID";
             this.txtFlashcardsEnterValidID.Size = new System.Drawing.Size(149, 29);
             this.txtFlashcardsEnterValidID.TabIndex = 13;

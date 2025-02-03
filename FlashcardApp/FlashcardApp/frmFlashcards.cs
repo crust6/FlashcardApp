@@ -36,7 +36,7 @@ namespace FlashcardApp
         {
             this.Close();
             Thread t = new Thread(new ThreadStart(ThreadfrmHomePage));
-            t.Start();
+            t.Start(); 
         }
 
         private void btnFlashcardsCreate_Click(object sender, EventArgs e)
@@ -49,6 +49,13 @@ namespace FlashcardApp
         private void frmFlashcards_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFlashcardsEdit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Thread t = new Thread(new ThreadStart(ThreadfrmCreateEdit));
+            t.Start();
         }
     }
 }

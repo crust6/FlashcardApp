@@ -48,6 +48,7 @@
             this.btnCreateEditCancel.TabIndex = 10;
             this.btnCreateEditCancel.Text = "Cancel";
             this.btnCreateEditCancel.UseVisualStyleBackColor = false;
+            this.btnCreateEditCancel.Click += new System.EventHandler(this.btnCreateEditCancel_Click);
             // 
             // btnCreateEditDelete
             // 
@@ -59,6 +60,7 @@
             this.btnCreateEditDelete.TabIndex = 11;
             this.btnCreateEditDelete.Text = "Delete";
             this.btnCreateEditDelete.UseVisualStyleBackColor = false;
+            this.btnCreateEditDelete.Click += new System.EventHandler(this.btnCreateEditDelete_Click);
             // 
             // btnCreateEditSave
             // 
@@ -70,6 +72,7 @@
             this.btnCreateEditSave.TabIndex = 12;
             this.btnCreateEditSave.Text = "Save";
             this.btnCreateEditSave.UseVisualStyleBackColor = false;
+            this.btnCreateEditSave.Click += new System.EventHandler(this.btnCreateEditSave_Click);
             // 
             // lblCreateEditPrompt
             // 
