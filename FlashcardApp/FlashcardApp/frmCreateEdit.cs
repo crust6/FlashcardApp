@@ -17,10 +17,27 @@ namespace FlashcardApp
         {
             Application.Run(new frmFlashcards());
         }
+
+        private void ThreadfrmFlashcards(int a, int b)
+        {
+            Application.Run(new frmFlashcards(a, b));
+        }
+// form constructor
+
         public frmCreateEdit()
         {
             InitializeComponent();
         }
+        public frmCreateEdit(int flashcardID, bool create)
+        {
+            InitializeComponent();
+            lblCreateEditID.Text = "ID: " + flashcardID.ToString();
+
+        }
+
+        // METHODS
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -44,8 +61,14 @@ namespace FlashcardApp
         private void btnCreateEditSave_Click(object sender, EventArgs e)
         {
             this.Close();
-            Thread t = new Thread(new ThreadStart(ThreadfrmFlashcards));
+            Thread t = new Thread(() => ThreadfrmFlashcards(1, 1));
+            globals.flashcardsCreated += 1;
             t.Start();
+        }
+
+        private void txtCreateEditPrompt_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

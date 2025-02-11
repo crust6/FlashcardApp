@@ -84,6 +84,7 @@
             // 
             // txtFlashcardsEnterValidID
             // 
+            this.txtFlashcardsEnterValidID.Enabled = false;
             this.txtFlashcardsEnterValidID.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFlashcardsEnterValidID.Location = new System.Drawing.Point(530, 513);
             this.txtFlashcardsEnterValidID.Name = "txtFlashcardsEnterValidID";
@@ -91,6 +92,7 @@
             this.txtFlashcardsEnterValidID.TabIndex = 13;
             this.txtFlashcardsEnterValidID.Text = "Enter Valid ID:";
             this.txtFlashcardsEnterValidID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFlashcardsEnterValidID.TextChanged += new System.EventHandler(this.txtFlashcardsEnterValidID_TextChanged);
             // 
             // frmFlashcards
             // 

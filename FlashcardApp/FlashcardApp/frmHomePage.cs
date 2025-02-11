@@ -25,12 +25,22 @@ namespace FlashcardApp
         {
             Application.Run(new frmQuizResults());
         }
+// form constructor
         public frmHomePage()
         {
             InitializeComponent();
         }
+        public frmHomePage(int flashcardsCreated, int quizzesTaken)
+        {
+            lblHomePageFlashcardsCreated.Text = flashcardsCreated.ToString();
+            lblHomePageQuizzesTaken.Text = quizzesTaken.ToString();
+            InitializeComponent();
+        }  
 
-        private void frmHomePage_Load(object sender, EventArgs e)
+// METHODS
+
+
+    private void frmHomePage_Load(object sender, EventArgs e)
         {
 
         }

@@ -104,6 +104,7 @@
             this.txtCreateEditPrompt.Size = new System.Drawing.Size(541, 29);
             this.txtCreateEditPrompt.TabIndex = 15;
             this.txtCreateEditPrompt.Text = "none";
+            this.txtCreateEditPrompt.TextChanged += new System.EventHandler(this.txtCreateEditPrompt_TextChanged);
             // 
             // txtCreateEditAnswer
             // 
