@@ -19,10 +19,6 @@ namespace FlashcardApp
             Application.Run(new frmHomePage());
         }
 
-        private void ThreadfrmHomePage(int flashcardsCreated, int quizzesTaken)
-        {
-            Application.Run(new frmHomePage(flashcardsCreated, quizzesTaken));
-        }
         private void ThreadfrmCreateEdit()
         {
             Application.Run(new frmCreateEdit());
@@ -52,7 +48,7 @@ namespace FlashcardApp
         private void btnFlashcardsToHome_Click(object sender, EventArgs e)
         {
             this.Close();
-            Thread t = new Thread(() => ThreadfrmHomePage(globals.flashcardsCreated, globals.quizzesTaken));
+            Thread t = new Thread(() => ThreadfrmHomePage());
             t.Start();
         }
 

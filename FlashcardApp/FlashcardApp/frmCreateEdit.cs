@@ -60,6 +60,10 @@ namespace FlashcardApp
 
         private void btnCreateEditSave_Click(object sender, EventArgs e)
         {
+            AppData appData = AppData.Load();
+            appData.FlashcardsCreated += 1;
+            appData.Save();
+
             this.Close();
             Thread t = new Thread(() => ThreadfrmFlashcards(1, 1));
             globals.flashcardsCreated += 1;
@@ -67,6 +71,11 @@ namespace FlashcardApp
         }
 
         private void txtCreateEditPrompt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmCreateEdit_Load(object sender, EventArgs e)
         {
 
         }

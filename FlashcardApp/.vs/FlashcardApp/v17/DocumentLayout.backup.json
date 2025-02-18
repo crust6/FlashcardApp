@@ -7,7 +7,7 @@
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\Users\\kevro\\OneDrive\\Documents\\Visual Studio 2022\\flashcardapp\\FlashcardApp\\flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|c:\\users\\kevro\\onedrive\\documents\\visual studio 2022\\flashcardapp\\flashcardapp\\flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmflashcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\Users\\kevro\\OneDrive\\Documents\\Visual Studio 2022\\flashcardapp\\FlashcardApp\\flashcardapp\\frmflashcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|c:\\users\\kevro\\onedrive\\documents\\visual studio 2022\\flashcardapp\\flashcardapp\\flashcardapp\\frmflashcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmflashcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmquiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\Users\\kevro\\OneDrive\\Documents\\Visual Studio 2022\\flashcardapp\\FlashcardApp\\flashcardapp\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|c:\\users\\kevro\\onedrive\\documents\\visual studio 2022\\flashcardapp\\flashcardapp\\flashcardapp\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\appdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -69,7 +69,8 @@
               "ToolTip": "C:\\Users\\kevro\\OneDrive\\Documents\\Visual Studio 2022\\flashcardapp\\FlashcardApp\\FlashcardApp\\frmQuiz.cs [Design]",
               "RelativeToolTip": "FlashcardApp\\frmQuiz.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-27T18:27:16.414Z"
+              "WhenOpened": "2025-01-27T18:27:16.414Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -81,7 +82,8 @@
               "RelativeToolTip": "FlashcardApp\\frmQuiz.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAlwCMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:31:44.947Z"
+              "WhenOpened": "2025-02-03T18:31:44.947Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -92,7 +94,8 @@
               "ToolTip": "C:\\Users\\kevro\\OneDrive\\Documents\\Visual Studio 2022\\flashcardapp\\FlashcardApp\\FlashcardApp\\frmFlashcards.cs [Design]",
               "RelativeToolTip": "FlashcardApp\\frmFlashcards.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T17:53:19.987Z"
+              "WhenOpened": "2025-02-03T17:53:19.987Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -114,7 +117,7 @@
               "RelativeDocumentMoniker": "FlashcardApp\\frmHomePage.cs",
               "ToolTip": "C:\\Users\\kevro\\OneDrive\\Documents\\Visual Studio 2022\\flashcardapp\\FlashcardApp\\FlashcardApp\\frmHomePage.cs",
               "RelativeToolTip": "FlashcardApp\\frmHomePage.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAiwB0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA6wB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T08:37:19.442Z",
               "EditorCaption": ""
@@ -129,7 +132,8 @@
               "RelativeToolTip": "FlashcardApp\\frmFlashcards.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAApwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:34:26.513Z"
+              "WhenOpened": "2025-02-03T18:34:26.513Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -141,7 +145,8 @@
               "RelativeToolTip": "FlashcardApp\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:53:12.485Z"
+              "WhenOpened": "2025-02-11T17:53:12.485Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -153,7 +158,8 @@
               "RelativeToolTip": "FlashcardApp\\frmCreateEdit.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAewEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-03T18:33:18.008Z"
+              "WhenOpened": "2025-02-03T18:33:18.008Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -165,7 +171,8 @@
               "RelativeToolTip": "FlashcardApp\\Appdata.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAA3wAsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-18T08:29:07.742Z"
+              "WhenOpened": "2025-02-18T08:29:07.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -177,7 +184,8 @@
               "RelativeToolTip": "FlashcardApp\\bin\\Debug\\appData.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-18T08:35:47.375Z"
+              "WhenOpened": "2025-02-18T08:35:47.375Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -189,7 +197,8 @@
               "RelativeToolTip": "FlashcardApp\\globals.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T17:53:48.896Z"
+              "WhenOpened": "2025-02-11T17:53:48.896Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

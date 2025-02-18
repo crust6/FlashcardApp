@@ -29,13 +29,11 @@ namespace FlashcardApp
         public frmHomePage()
         {
             InitializeComponent();
-        }
-        public frmHomePage(int flashcardsCreated, int quizzesTaken)
-        {
-            lblHomePageFlashcardsCreated.Text = flashcardsCreated.ToString();
-            lblHomePageQuizzesTaken.Text = quizzesTaken.ToString();
-            InitializeComponent();
-        }  
+            AppData appData = AppData.Load();
+
+            lblHomePageFlashcardsCreated.Text = appData.FlashcardsCreated.ToString();
+            lblHomePageQuizzesTaken.Text = appData.QuizzesTaken.ToString();
+        } 
 
 // METHODS
 
