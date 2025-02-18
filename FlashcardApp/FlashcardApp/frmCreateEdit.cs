@@ -53,6 +53,11 @@ namespace FlashcardApp
 
         private void btnCreateEditDelete_Click(object sender, EventArgs e)
         {
+            int flashcardID = Convert.ToInt32(lblCreateEditID.Text.Replace("ID: ", ""));
+
+            Database.DeleteFlashcard(flashcardID);
+            MessageBox.Show($"❌ Flashcard {flashcardID} Deleted!");
+
             this.Close();
             Thread t = new Thread(new ThreadStart(ThreadfrmFlashcards));
             t.Start();
@@ -60,13 +65,18 @@ namespace FlashcardApp
 
         private void btnCreateEditSave_Click(object sender, EventArgs e)
         {
+
+
+
+            Database.AddFlashcard(txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, "Default");
+            MessageBox.Show("Flashcard Saved!");
+
             AppData appData = AppData.Load();
             appData.FlashcardsCreated += 1;
             appData.Save();
 
             this.Close();
             Thread t = new Thread(() => ThreadfrmFlashcards(1, 1));
-            globals.flashcardsCreated += 1;
             t.Start();
         }
 

@@ -12,11 +12,6 @@ C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.f
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmQuiz.resources
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmCreateEdit.resources
 C:\__Students\Xu\FlashcardApp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmQuizResults.resources
-C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\FlashcardApp.exe.config
-C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\FlashcardApp.exe
-C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\FlashcardApp.pdb
-C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\Newtonsoft.Json.dll
-C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\Newtonsoft.Json.xml
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.csproj.AssemblyReference.cache
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmQuiz.resources
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.frmCreateEdit.resources
@@ -26,6 +21,19 @@ C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\F
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.Properties.Resources.resources
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.csproj.GenerateResource.cache
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.csproj.CoreCompileInputs.cache
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\FlashcardApp.exe.config
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\FlashcardApp.exe
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\FlashcardApp.pdb
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\EntityFramework.dll
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\EntityFramework.xml
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\bin\Debug\System.Data.SQLite.xml
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\Flashcar.60EEFBBB.Up2Date
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.exe
 C:\Users\kevro\OneDrive\Documents\Visual Studio 2022\flashcardapp\FlashcardApp\FlashcardApp\obj\Debug\FlashcardApp.pdb
