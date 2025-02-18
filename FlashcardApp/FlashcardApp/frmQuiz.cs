@@ -31,9 +31,17 @@ namespace FlashcardApp
 
         private void btnQuizSubmit_Click(object sender, EventArgs e)
         {
+            AppData appData = AppData.Load();
+            appData.QuizzesTaken += 1;
+            appData.Save();
             this.Close();
             Thread t = new Thread(new ThreadStart(ThreadfrmHomePage));
             t.Start();
+        }
+
+        private void frmQuiz_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

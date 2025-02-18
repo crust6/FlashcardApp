@@ -19,10 +19,6 @@ namespace FlashcardApp
             Application.Run(new frmHomePage());
         }
 
-        private void ThreadfrmHomePage(int flashcardsCreated, int quizzesTaken)
-        {
-            Application.Run(new frmHomePage(flashcardsCreated, quizzesTaken));
-        }
         private void ThreadfrmCreateEdit()
         {
             Application.Run(new frmCreateEdit());
@@ -52,7 +48,7 @@ namespace FlashcardApp
         private void btnFlashcardsToHome_Click(object sender, EventArgs e)
         {
             this.Close();
-            Thread t = new Thread(() => ThreadfrmHomePage(globals.flashcardsCreated, globals.quizzesTaken));
+            Thread t = new Thread(() => ThreadfrmHomePage());
             t.Start();
         }
 
@@ -65,22 +61,39 @@ namespace FlashcardApp
 
         private void frmFlashcards_Load(object sender, EventArgs e)
         {
+            // Retrieve all flashcards from the database
+            List<(int, string, string, string)> flashcards = Database.GetAllFlashcards();
 
+            // Print each flashcard to the console for debugging
+            foreach (var card in flashcards)
+            {
+                Console.WriteLine($"ID: {card.Item1}, Prompt: {card.Item2}, Answer: {card.Item3}, Category: {card.Item4}");
+            }
         }
 
         private void btnFlashcardsEdit_Click(object sender, EventArgs e)
         {
-            string err = "Invalid FlashcardID";
             try
             {
                 int selectedFlashcardID = Convert.ToInt32(txtFlashcardsFlashcardID.Text);
+
+                // Check if the flashcard exists before opening edit mode
+                var flashcards = Database.GetAllFlashcards();
+                bool exists = flashcards.Any(f => f.Item1 == selectedFlashcardID);
+
+                if (!exists)
+                {
+                    MessageBox.Show("⚠️ This Flashcard ID does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 this.Close();
                 Thread t = new Thread(() => ThreadfrmCreateEdit(selectedFlashcardID, false));
                 t.Start();
             }
             catch
             {
-                MessageBox.Show(err, "Flashcards", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Flashcard ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
