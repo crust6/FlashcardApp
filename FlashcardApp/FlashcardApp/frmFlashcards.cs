@@ -54,8 +54,9 @@ namespace FlashcardApp
 
         private void btnFlashcardsCreate_Click(object sender, EventArgs e)
         {
+            int newFlashcardID = Database.GetNextFlashcardID();
             this.Close();
-            Thread t = new Thread(new ThreadStart(ThreadfrmCreateEdit));
+            Thread t = new Thread(() => ThreadfrmCreateEdit(newFlashcardID, true));
             t.Start();
         }
 
@@ -70,6 +71,7 @@ namespace FlashcardApp
                 Console.WriteLine($"ID: {card.Item1}, Prompt: {card.Item2}, Answer: {card.Item3}, Category: {card.Item4}");
             }
         }
+
 
         private void btnFlashcardsEdit_Click(object sender, EventArgs e)
         {
@@ -87,6 +89,7 @@ namespace FlashcardApp
                     return;
                 }
 
+                // Open the edit page for this flashcard
                 this.Close();
                 Thread t = new Thread(() => ThreadfrmCreateEdit(selectedFlashcardID, false));
                 t.Start();
@@ -96,6 +99,7 @@ namespace FlashcardApp
                 MessageBox.Show("Invalid Flashcard ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
         private void txtFlashcardsEnterValidID_TextChanged(object sender, EventArgs e)
         {

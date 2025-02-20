@@ -13,6 +13,9 @@ namespace FlashcardApp
 {
     public partial class frmCreateEdit : Form
     {
+
+        bool create = false;
+
         private void ThreadfrmFlashcards()
         {
             Application.Run(new frmFlashcards());
@@ -28,15 +31,26 @@ namespace FlashcardApp
         {
             InitializeComponent();
         }
+
         public frmCreateEdit(int flashcardID, bool create)
         {
+            this.create = create;
             InitializeComponent();
             lblCreateEditID.Text = "ID: " + flashcardID.ToString();
 
+            if (!create)
+            {
+                // Load flashcard data for editing
+                var flashcard = Database.GetFlashcardByID(flashcardID);
+                if (flashcard.HasValue)  // or if (flashcard != null)
+                {
+                    txtCreateEditPrompt.Text = flashcard.Value.Item2;  // Prompt
+                    txtCreateEditAnswer.Text = flashcard.Value.Item3;  // Answer
+                }
+            }
         }
 
         // METHODS
-
 
 
         private void label1_Click(object sender, EventArgs e)
@@ -62,21 +76,39 @@ namespace FlashcardApp
             Thread t = new Thread(new ThreadStart(ThreadfrmFlashcards));
             t.Start();
         }
-
         private void btnCreateEditSave_Click(object sender, EventArgs e)
         {
+            int flashcardID = Convert.ToInt32(lblCreateEditID.Text.Replace("ID: ", ""));
+
+            if (this.create)
+            {
+                Database.AddFlashcard(txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, "Default");
+                AppData appData = AppData.Load();
+                appData.FlashcardsCreated += 1;
+                appData.Save();
+            }
+            else
+            {
+                Database.UpdateFlashcard(flashcardID, txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, "Default");
+
+            }
+
+            MessageBox.Show("✅ Flashcard Updated!");
+            
+            var card = Database.GetFlashcardByID(flashcardID);
+            if (card.HasValue)
+            {
+                Console.WriteLine($"ID: {card.Value.Item1}, Q: {card.Value.Item2}, A: {card.Value.Item3}, Category: {card.Value.Item4}");
+            }
+            else
+            {
+                Console.WriteLine("Card not found after update!");  // Optional error handling
+            }
 
 
-
-            Database.AddFlashcard(txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, "Default");
-            MessageBox.Show("Flashcard Saved!");
-
-            AppData appData = AppData.Load();
-            appData.FlashcardsCreated += 1;
-            appData.Save();
 
             this.Close();
-            Thread t = new Thread(() => ThreadfrmFlashcards(1, 1));
+            Thread t = new Thread(() => ThreadfrmFlashcards());
             t.Start();
         }
 
@@ -87,7 +119,12 @@ namespace FlashcardApp
 
         private void frmCreateEdit_Load(object sender, EventArgs e)
         {
-
+            if (lblCreateEditID.Text == "ID: ")
+            {
+                // Display the ID of the new flashcard that will be created
+                int nextID = Database.GetNextFlashcardID();
+                lblCreateEditID.Text = "ID: " + nextID.ToString();
+            }
         }
     }
 }

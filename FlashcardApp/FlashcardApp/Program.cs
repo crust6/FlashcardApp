@@ -15,7 +15,7 @@ namespace FlashcardApp
         static void Main()
         {
             Database.CreateTables();
-            Database.AddFlashcard("What is 2+2?", "4", "Math");
+           // Database.AddFlashcard("What is 2+2?", "4", "Math");
 
             var flashcards = Database.GetAllFlashcards();
             foreach (var card in flashcards)
