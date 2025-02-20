@@ -93,6 +93,18 @@ namespace FlashcardApp
             {
                 conn.Open();
 
+
+                // First, check if ID 1 exists
+                string checkOneQuery = "SELECT COUNT(*) FROM Flashcards WHERE ID = 1";
+                SQLiteCommand checkCommand = new SQLiteCommand(checkOneQuery, conn);
+                int hasOne = Convert.ToInt32(checkCommand.ExecuteScalar());
+
+                // If ID 1 doesn't exist, return 1
+                if (hasOne == 0)
+                {
+                    return 1;
+                }
+
                 // Find the smallest available ID (reusing deleted IDs)
                 string findIDQuery = "SELECT MIN(t1.ID + 1) AS newID FROM Flashcards t1 LEFT JOIN Flashcards t2 ON t1.ID + 1 = t2.ID WHERE t2.ID IS NULL";
                 SQLiteCommand idCommand = new SQLiteCommand(findIDQuery, conn);

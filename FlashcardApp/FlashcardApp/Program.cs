@@ -20,6 +20,7 @@ namespace FlashcardApp
             var flashcards = Database.GetAllFlashcards();
             foreach (var card in flashcards)
             {
+                
                 Console.WriteLine($"ID: {card.Item1}, Q: {card.Item2}, A: {card.Item3}, Category: {card.Item4}");
             }
 

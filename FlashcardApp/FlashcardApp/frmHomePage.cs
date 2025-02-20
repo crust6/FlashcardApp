@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -78,6 +79,34 @@ namespace FlashcardApp
         private void btnHomePageExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnHomePageClearAll(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnHomePageClearAllData_Click(object sender, EventArgs e)
+        {
+            AppData appData = AppData.Load();
+            appData.FlashcardsCreated = 0;
+            appData.QuizzesTaken = 0;
+            appData.Save();
+
+            int TotalFlashcards = 0;
+            var flashcards = Database.GetAllFlashcards();
+            foreach (var card in flashcards)
+            {
+                TotalFlashcards += 1;
+            }
+            for (int i = 1; i < TotalFlashcards+1; i++)
+            {
+                Database.DeleteFlashcard(i);
+            }
+            MessageBox.Show($"❌ All Data Deleted!");
+            lblHomePageFlashcardsCreated.Text = appData.FlashcardsCreated.ToString();
+            lblHomePageQuizzesTaken.Text = appData.QuizzesTaken.ToString();
+
         }
     }
 }

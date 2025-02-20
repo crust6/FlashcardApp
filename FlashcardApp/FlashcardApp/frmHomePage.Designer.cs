@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblHomePageFlashcardsCreated = new System.Windows.Forms.Label();
             this.lblHomePageQuizzesTaken = new System.Windows.Forms.Label();
+            this.btnHomePageClearAllData = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -165,12 +166,25 @@
             this.lblHomePageQuizzesTaken.Text = "N/A";
             this.lblHomePageQuizzesTaken.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // btnHomePageClearAllData
+            // 
+            this.btnHomePageClearAllData.BackColor = System.Drawing.Color.Tomato;
+            this.btnHomePageClearAllData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHomePageClearAllData.Location = new System.Drawing.Point(615, 436);
+            this.btnHomePageClearAllData.Name = "btnHomePageClearAllData";
+            this.btnHomePageClearAllData.Size = new System.Drawing.Size(167, 33);
+            this.btnHomePageClearAllData.TabIndex = 13;
+            this.btnHomePageClearAllData.Text = "Clear All Data";
+            this.btnHomePageClearAllData.UseVisualStyleBackColor = false;
+            this.btnHomePageClearAllData.Click += new System.EventHandler(this.btnHomePageClearAllData_Click);
+            // 
             // frmHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(834, 481);
+            this.Controls.Add(this.btnHomePageClearAllData);
             this.Controls.Add(this.lblHomePageQuizzesTaken);
             this.Controls.Add(this.lblHomePageFlashcardsCreated);
             this.Controls.Add(this.label3);
@@ -202,6 +216,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblHomePageFlashcardsCreated;
         private System.Windows.Forms.Label lblHomePageQuizzesTaken;
+        private System.Windows.Forms.Button btnHomePageClearAllData;
     }
 }
 
