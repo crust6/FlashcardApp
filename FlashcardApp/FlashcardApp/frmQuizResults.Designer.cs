@@ -55,6 +55,7 @@
             this.btnQuizResultsCategory.TabIndex = 11;
             this.btnQuizResultsCategory.Text = "Category";
             this.btnQuizResultsCategory.UseVisualStyleBackColor = true;
+            this.btnQuizResultsCategory.Click += new System.EventHandler(this.btnQuizResultsCategory_Click);
             // 
             // btnQuizResultsMostRecent
             // 
@@ -65,6 +66,7 @@
             this.btnQuizResultsMostRecent.TabIndex = 12;
             this.btnQuizResultsMostRecent.Text = "Most Recent";
             this.btnQuizResultsMostRecent.UseVisualStyleBackColor = true;
+            this.btnQuizResultsMostRecent.Click += new System.EventHandler(this.btnQuizResultsMostRecent_Click);
             // 
             // btnQuizResultsOldest
             // 
@@ -75,6 +77,7 @@
             this.btnQuizResultsOldest.TabIndex = 13;
             this.btnQuizResultsOldest.Text = "Oldest";
             this.btnQuizResultsOldest.UseVisualStyleBackColor = true;
+            this.btnQuizResultsOldest.Click += new System.EventHandler(this.btnQuizResultsOldest_Click);
             // 
             // frmQuizResults
             // 

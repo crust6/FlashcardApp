@@ -36,16 +36,17 @@
             this.txtCreateEditPrompt = new System.Windows.Forms.TextBox();
             this.txtCreateEditAnswer = new System.Windows.Forms.TextBox();
             this.lblCreateEditID = new System.Windows.Forms.Label();
+            this.txtCreateEditCategory = new System.Windows.Forms.TextBox();
+            this.lblCreateEditCategory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCreateEditCancel
             // 
             this.btnCreateEditCancel.BackColor = System.Drawing.Color.LightCoral;
             this.btnCreateEditCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateEditCancel.Location = new System.Drawing.Point(22, 768);
-            this.btnCreateEditCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCreateEditCancel.Location = new System.Drawing.Point(12, 416);
             this.btnCreateEditCancel.Name = "btnCreateEditCancel";
-            this.btnCreateEditCancel.Size = new System.Drawing.Size(213, 61);
+            this.btnCreateEditCancel.Size = new System.Drawing.Size(116, 33);
             this.btnCreateEditCancel.TabIndex = 10;
             this.btnCreateEditCancel.Text = "Cancel";
             this.btnCreateEditCancel.UseVisualStyleBackColor = false;
@@ -55,10 +56,9 @@
             // 
             this.btnCreateEditDelete.BackColor = System.Drawing.Color.OrangeRed;
             this.btnCreateEditDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateEditDelete.Location = new System.Drawing.Point(968, 768);
-            this.btnCreateEditDelete.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCreateEditDelete.Location = new System.Drawing.Point(528, 416);
             this.btnCreateEditDelete.Name = "btnCreateEditDelete";
-            this.btnCreateEditDelete.Size = new System.Drawing.Size(213, 61);
+            this.btnCreateEditDelete.Size = new System.Drawing.Size(116, 33);
             this.btnCreateEditDelete.TabIndex = 11;
             this.btnCreateEditDelete.Text = "Delete";
             this.btnCreateEditDelete.UseVisualStyleBackColor = false;
@@ -68,10 +68,9 @@
             // 
             this.btnCreateEditSave.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnCreateEditSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateEditSave.Location = new System.Drawing.Point(1203, 768);
-            this.btnCreateEditSave.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCreateEditSave.Location = new System.Drawing.Point(656, 416);
             this.btnCreateEditSave.Name = "btnCreateEditSave";
-            this.btnCreateEditSave.Size = new System.Drawing.Size(213, 61);
+            this.btnCreateEditSave.Size = new System.Drawing.Size(116, 33);
             this.btnCreateEditSave.TabIndex = 12;
             this.btnCreateEditSave.Text = "Save";
             this.btnCreateEditSave.UseVisualStyleBackColor = false;
@@ -82,10 +81,9 @@
             this.lblCreateEditPrompt.AutoSize = true;
             this.lblCreateEditPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreateEditPrompt.ForeColor = System.Drawing.Color.Black;
-            this.lblCreateEditPrompt.Location = new System.Drawing.Point(104, 264);
-            this.lblCreateEditPrompt.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblCreateEditPrompt.Location = new System.Drawing.Point(57, 109);
             this.lblCreateEditPrompt.Name = "lblCreateEditPrompt";
-            this.lblCreateEditPrompt.Size = new System.Drawing.Size(167, 48);
+            this.lblCreateEditPrompt.Size = new System.Drawing.Size(97, 29);
             this.lblCreateEditPrompt.TabIndex = 13;
             this.lblCreateEditPrompt.Text = "Prompt:";
             // 
@@ -94,20 +92,18 @@
             this.lblCreateEditAnswer.AutoSize = true;
             this.lblCreateEditAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreateEditAnswer.ForeColor = System.Drawing.Color.Black;
-            this.lblCreateEditAnswer.Location = new System.Drawing.Point(104, 462);
-            this.lblCreateEditAnswer.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblCreateEditAnswer.Location = new System.Drawing.Point(57, 204);
             this.lblCreateEditAnswer.Name = "lblCreateEditAnswer";
-            this.lblCreateEditAnswer.Size = new System.Drawing.Size(171, 48);
+            this.lblCreateEditAnswer.Size = new System.Drawing.Size(99, 29);
             this.lblCreateEditAnswer.TabIndex = 14;
             this.lblCreateEditAnswer.Text = "Answer:";
             // 
             // txtCreateEditPrompt
             // 
             this.txtCreateEditPrompt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreateEditPrompt.Location = new System.Drawing.Point(293, 264);
-            this.txtCreateEditPrompt.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCreateEditPrompt.Location = new System.Drawing.Point(160, 109);
             this.txtCreateEditPrompt.Name = "txtCreateEditPrompt";
-            this.txtCreateEditPrompt.Size = new System.Drawing.Size(988, 44);
+            this.txtCreateEditPrompt.Size = new System.Drawing.Size(541, 29);
             this.txtCreateEditPrompt.TabIndex = 15;
             this.txtCreateEditPrompt.Text = "none";
             this.txtCreateEditPrompt.TextChanged += new System.EventHandler(this.txtCreateEditPrompt_TextChanged);
@@ -115,10 +111,9 @@
             // txtCreateEditAnswer
             // 
             this.txtCreateEditAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreateEditAnswer.Location = new System.Drawing.Point(297, 463);
-            this.txtCreateEditAnswer.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCreateEditAnswer.Location = new System.Drawing.Point(162, 205);
             this.txtCreateEditAnswer.Name = "txtCreateEditAnswer";
-            this.txtCreateEditAnswer.Size = new System.Drawing.Size(985, 44);
+            this.txtCreateEditAnswer.Size = new System.Drawing.Size(539, 29);
             this.txtCreateEditAnswer.TabIndex = 16;
             this.txtCreateEditAnswer.Text = "none";
             // 
@@ -127,20 +122,42 @@
             this.lblCreateEditID.AutoSize = true;
             this.lblCreateEditID.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreateEditID.ForeColor = System.Drawing.Color.Black;
-            this.lblCreateEditID.Location = new System.Drawing.Point(1236, 17);
-            this.lblCreateEditID.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblCreateEditID.Location = new System.Drawing.Point(674, 9);
             this.lblCreateEditID.Name = "lblCreateEditID";
-            this.lblCreateEditID.Size = new System.Drawing.Size(74, 48);
+            this.lblCreateEditID.Size = new System.Drawing.Size(42, 29);
             this.lblCreateEditID.TabIndex = 17;
             this.lblCreateEditID.Text = "ID:";
             this.lblCreateEditID.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.lblCreateEditID.Click += new System.EventHandler(this.label1_Click);
             // 
+            // txtCreateEditCategory
+            // 
+            this.txtCreateEditCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCreateEditCategory.Location = new System.Drawing.Point(306, 308);
+            this.txtCreateEditCategory.Name = "txtCreateEditCategory";
+            this.txtCreateEditCategory.Size = new System.Drawing.Size(258, 29);
+            this.txtCreateEditCategory.TabIndex = 19;
+            this.txtCreateEditCategory.Text = "none";
+            this.txtCreateEditCategory.TextChanged += new System.EventHandler(this.txtCreateEditCategory_TextChanged);
+            // 
+            // lblCreateEditCategory
+            // 
+            this.lblCreateEditCategory.AutoSize = true;
+            this.lblCreateEditCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCreateEditCategory.ForeColor = System.Drawing.Color.Black;
+            this.lblCreateEditCategory.Location = new System.Drawing.Point(193, 308);
+            this.lblCreateEditCategory.Name = "lblCreateEditCategory";
+            this.lblCreateEditCategory.Size = new System.Drawing.Size(116, 29);
+            this.lblCreateEditCategory.TabIndex = 18;
+            this.lblCreateEditCategory.Text = "Category:";
+            // 
             // frmCreateEdit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1437, 851);
+            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.Controls.Add(this.txtCreateEditCategory);
+            this.Controls.Add(this.lblCreateEditCategory);
             this.Controls.Add(this.lblCreateEditID);
             this.Controls.Add(this.txtCreateEditAnswer);
             this.Controls.Add(this.txtCreateEditPrompt);
@@ -149,7 +166,6 @@
             this.Controls.Add(this.btnCreateEditSave);
             this.Controls.Add(this.btnCreateEditDelete);
             this.Controls.Add(this.btnCreateEditCancel);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "frmCreateEdit";
             this.Text = "Create/Edit Flashcard";
             this.Load += new System.EventHandler(this.frmCreateEdit_Load);
@@ -168,5 +184,7 @@
         private System.Windows.Forms.TextBox txtCreateEditPrompt;
         private System.Windows.Forms.TextBox txtCreateEditAnswer;
         private System.Windows.Forms.Label lblCreateEditID;
+        private System.Windows.Forms.TextBox txtCreateEditCategory;
+        private System.Windows.Forms.Label lblCreateEditCategory;
     }
 }

@@ -46,6 +46,7 @@ namespace FlashcardApp
                 {
                     txtCreateEditPrompt.Text = flashcard.Value.Item2;  // Prompt
                     txtCreateEditAnswer.Text = flashcard.Value.Item3;  // Answer
+                    txtCreateEditCategory.Text = flashcard.Value.Item4; // Category
                 }
             }
         }
@@ -82,14 +83,14 @@ namespace FlashcardApp
 
             if (this.create)
             {
-                Database.AddFlashcard(txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, "Default");
+                Database.AddFlashcard(txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, txtCreateEditCategory.Text);
                 AppData appData = AppData.Load();
                 appData.FlashcardsCreated += 1;
                 appData.Save();
             }
             else
             {
-                Database.UpdateFlashcard(flashcardID, txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, "Default");
+                Database.UpdateFlashcard(flashcardID, txtCreateEditPrompt.Text, txtCreateEditAnswer.Text, txtCreateEditCategory.Text);
 
             }
 
@@ -125,6 +126,11 @@ namespace FlashcardApp
                 int nextID = Database.GetNextFlashcardID();
                 lblCreateEditID.Text = "ID: " + nextID.ToString();
             }
+        }
+
+        private void txtCreateEditCategory_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

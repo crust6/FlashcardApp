@@ -41,6 +41,8 @@
             this.lblHomePageFlashcardsCreated = new System.Windows.Forms.Label();
             this.lblHomePageQuizzesTaken = new System.Windows.Forms.Label();
             this.btnHomePageClearAllData = new System.Windows.Forms.Button();
+            this.txtHomePageCategory = new System.Windows.Forms.TextBox();
+            this.lblHomePageCategory = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -53,7 +55,7 @@
             this.lblHomePageWelcome.AutoSize = true;
             this.lblHomePageWelcome.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHomePageWelcome.ForeColor = System.Drawing.Color.Black;
-            this.lblHomePageWelcome.Location = new System.Drawing.Point(36, 41);
+            this.lblHomePageWelcome.Location = new System.Drawing.Point(22, 40);
             this.lblHomePageWelcome.Name = "lblHomePageWelcome";
             this.lblHomePageWelcome.Size = new System.Drawing.Size(198, 44);
             this.lblHomePageWelcome.TabIndex = 3;
@@ -64,7 +66,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(39, 151);
+            this.label1.Location = new System.Drawing.Point(25, 151);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(247, 29);
             this.label1.TabIndex = 4;
@@ -74,9 +76,9 @@
             // 
             this.btnHomePageTakeQuiz.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnHomePageTakeQuiz.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHomePageTakeQuiz.Location = new System.Drawing.Point(615, 142);
+            this.btnHomePageTakeQuiz.Location = new System.Drawing.Point(662, 142);
             this.btnHomePageTakeQuiz.Name = "btnHomePageTakeQuiz";
-            this.btnHomePageTakeQuiz.Size = new System.Drawing.Size(167, 47);
+            this.btnHomePageTakeQuiz.Size = new System.Drawing.Size(146, 47);
             this.btnHomePageTakeQuiz.TabIndex = 5;
             this.btnHomePageTakeQuiz.Text = "Take Quiz";
             this.btnHomePageTakeQuiz.UseVisualStyleBackColor = false;
@@ -86,7 +88,7 @@
             // 
             this.btnHomePageQuizResults.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnHomePageQuizResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHomePageQuizResults.Location = new System.Drawing.Point(44, 327);
+            this.btnHomePageQuizResults.Location = new System.Drawing.Point(30, 327);
             this.btnHomePageQuizResults.Name = "btnHomePageQuizResults";
             this.btnHomePageQuizResults.Size = new System.Drawing.Size(212, 47);
             this.btnHomePageQuizResults.TabIndex = 6;
@@ -98,7 +100,7 @@
             // 
             this.btnHomePageToFlashcards.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnHomePageToFlashcards.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHomePageToFlashcards.Location = new System.Drawing.Point(44, 243);
+            this.btnHomePageToFlashcards.Location = new System.Drawing.Point(30, 243);
             this.btnHomePageToFlashcards.Name = "btnHomePageToFlashcards";
             this.btnHomePageToFlashcards.Size = new System.Drawing.Size(212, 47);
             this.btnHomePageToFlashcards.TabIndex = 7;
@@ -123,7 +125,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(304, 252);
+            this.label2.Location = new System.Drawing.Point(280, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(290, 29);
             this.label2.TabIndex = 9;
@@ -135,7 +137,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(304, 336);
+            this.label3.Location = new System.Drawing.Point(280, 336);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(240, 29);
             this.label3.TabIndex = 10;
@@ -170,7 +172,7 @@
             // 
             this.btnHomePageClearAllData.BackColor = System.Drawing.Color.Tomato;
             this.btnHomePageClearAllData.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHomePageClearAllData.Location = new System.Drawing.Point(615, 436);
+            this.btnHomePageClearAllData.Location = new System.Drawing.Point(641, 436);
             this.btnHomePageClearAllData.Name = "btnHomePageClearAllData";
             this.btnHomePageClearAllData.Size = new System.Drawing.Size(167, 33);
             this.btnHomePageClearAllData.TabIndex = 13;
@@ -178,12 +180,34 @@
             this.btnHomePageClearAllData.UseVisualStyleBackColor = false;
             this.btnHomePageClearAllData.Click += new System.EventHandler(this.btnHomePageClearAllData_Click);
             // 
+            // txtHomePageCategory
+            // 
+            this.txtHomePageCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHomePageCategory.Location = new System.Drawing.Point(377, 150);
+            this.txtHomePageCategory.Name = "txtHomePageCategory";
+            this.txtHomePageCategory.Size = new System.Drawing.Size(258, 29);
+            this.txtHomePageCategory.TabIndex = 21;
+            this.txtHomePageCategory.Text = "none";
+            // 
+            // lblHomePageCategory
+            // 
+            this.lblHomePageCategory.AutoSize = true;
+            this.lblHomePageCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHomePageCategory.ForeColor = System.Drawing.Color.Black;
+            this.lblHomePageCategory.Location = new System.Drawing.Point(281, 155);
+            this.lblHomePageCategory.Name = "lblHomePageCategory";
+            this.lblHomePageCategory.Size = new System.Drawing.Size(90, 24);
+            this.lblHomePageCategory.TabIndex = 20;
+            this.lblHomePageCategory.Text = "Category:";
+            // 
             // frmHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(834, 481);
+            this.Controls.Add(this.txtHomePageCategory);
+            this.Controls.Add(this.lblHomePageCategory);
             this.Controls.Add(this.btnHomePageClearAllData);
             this.Controls.Add(this.lblHomePageQuizzesTaken);
             this.Controls.Add(this.lblHomePageFlashcardsCreated);
@@ -217,6 +241,8 @@
         private System.Windows.Forms.Label lblHomePageFlashcardsCreated;
         private System.Windows.Forms.Label lblHomePageQuizzesTaken;
         private System.Windows.Forms.Button btnHomePageClearAllData;
+        private System.Windows.Forms.TextBox txtHomePageCategory;
+        private System.Windows.Forms.Label lblHomePageCategory;
     }
 }
 

@@ -28,5 +28,20 @@ namespace FlashcardApp
             Thread t = new Thread(new ThreadStart(ThreadfrmHomePage));
             t.Start();
         }
+
+        private void btnQuizResultsCategory_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuizResultsMostRecent_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnQuizResultsOldest_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
