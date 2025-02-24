@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,8 @@ namespace FlashcardApp
 {
     public partial class frmFlashcards : Form
     {
-// threads
+        private int currentFlashcardID = 1;
+        // threads
         private void ThreadfrmHomePage()
         {
             Application.Run(new frmHomePage());
@@ -32,13 +34,22 @@ namespace FlashcardApp
         public frmFlashcards()
         {
             InitializeComponent();
+            // retrieve list of all flashcards
+            if (Database.GetNextFlashcardID() > 1)
+            {
+                ArrayList flashcardList = new ArrayList();
+                for (int i = 1; i < Database.GetNextFlashcardID(); i++)
+                {
+                    flashcardList.Add(i);
+                }
+                Console.WriteLine(flashcardList.ToString());
+                lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(Convert.ToInt32(flashcardList[0])).Value.Item2;
+                lblFlashcardsID.Text = "ID: " + Database.GetFlashcardByID(Convert.ToInt32(flashcardList[0])).Value.Item1;
+                lblFlashcardsCategory.Text = Database.GetFlashcardByID(Convert.ToInt32(flashcardList[0])).Value.Item4;
+                lblFlashcardsPromptAnswer.Text = "Prompt";
+            }
         }
 
-        public frmFlashcards(int a, int b)
-            {
-                InitializeComponent();
-                txtFlashcardsFlashcardID.Text = a.ToString();
-            }
 
         private void txtFlashcardsFlashcardID_TextChanged(object sender, EventArgs e)
         {
@@ -104,6 +115,32 @@ namespace FlashcardApp
         private void txtFlashcardsEnterValidID_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void lblFlashcardsPromptAnswerTxt_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (Database.GetNextFlashcardID() > 1)
+            {
+                if (lblFlashcardsPromptAnswer.Text == "Prompt")
+                {
+                    lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item3;
+                    lblFlashcardsID.Text = "ID: " + Database.GetFlashcardByID(currentFlashcardID).Value.Item1;
+                    lblFlashcardsCategory.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item4;
+                    lblFlashcardsPromptAnswer.Text = "Answer";
+                }
+                else
+                {
+                    lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item2;
+                    lblFlashcardsID.Text = "ID: " + Database.GetFlashcardByID(currentFlashcardID).Value.Item1;
+                    lblFlashcardsCategory.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item4;
+                    lblFlashcardsPromptAnswer.Text = "Prompt";
+                }
+            }
         }
     }
 }

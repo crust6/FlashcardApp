@@ -1,5 +1,6 @@
 ﻿using System;
 using System.CodeDom.Compiler;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace FlashcardApp
 {
     public partial class frmHomePage : Form
     {
+
         private void ThreadfrmFlashcards()
         {
             Application.Run(new frmFlashcards());

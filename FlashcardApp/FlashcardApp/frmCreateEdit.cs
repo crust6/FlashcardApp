@@ -21,10 +21,7 @@ namespace FlashcardApp
             Application.Run(new frmFlashcards());
         }
 
-        private void ThreadfrmFlashcards(int a, int b)
-        {
-            Application.Run(new frmFlashcards(a, b));
-        }
+
 // form constructor
 
         public frmCreateEdit()
