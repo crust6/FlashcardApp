@@ -14,7 +14,14 @@ namespace FlashcardApp
 {
     public partial class frmFlashcards : Form
     {
-        private int currentFlashcardID = 1;
+        //instance variables
+
+        private int currentFlashcardID = 0;
+        private int flashcardListIndex = 0;
+        private bool promptAnswerState = false;
+        private ArrayList flashcardList = new ArrayList();
+
+
         // threads
         private void ThreadfrmHomePage()
         {
@@ -35,21 +42,41 @@ namespace FlashcardApp
         {
             InitializeComponent();
             // retrieve list of all flashcards
-            if (Database.GetNextFlashcardID() > 1)
+            List<(int, string, string, string)> temp = Database.GetAllFlashcards();
+            if (Database.GetAllFlashcards().Count > 0)
             {
-                ArrayList flashcardList = new ArrayList();
-                for (int i = 1; i < Database.GetNextFlashcardID(); i++)
+                for (int i = 0; i < temp.Count; i++)
                 {
-                    flashcardList.Add(i);
+                    flashcardList.Add(Convert.ToInt32(temp[i].Item1));
                 }
+
+                currentFlashcardID = Convert.ToInt32(flashcardList[0]);
+
                 Console.WriteLine(flashcardList.ToString());
-                lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(Convert.ToInt32(flashcardList[0])).Value.Item2;
-                lblFlashcardsID.Text = "ID: " + Database.GetFlashcardByID(Convert.ToInt32(flashcardList[0])).Value.Item1;
-                lblFlashcardsCategory.Text = Database.GetFlashcardByID(Convert.ToInt32(flashcardList[0])).Value.Item4;
-                lblFlashcardsPromptAnswer.Text = "Prompt";
+                this.updateFlashcard(Convert.ToInt32(flashcardList[0]), false);
+            }
+            else
+            {
+                MessageBox.Show("⚠️ You currently have Zero Flashcards!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        // methods
 
+        private void updateFlashcard(int flashcardID, bool promptAnswer)
+        {
+            lblFlashcardsID.Text = "ID: " + Database.GetFlashcardByID(flashcardID).Value.Item1;
+            lblFlashcardsCategory.Text = Database.GetFlashcardByID(flashcardID).Value.Item4;
+            if (promptAnswer)
+            {
+                lblFlashcardsPromptAnswer.Text = "Answer";
+                lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(flashcardID).Value.Item3;
+            }
+            else
+            {
+                lblFlashcardsPromptAnswer.Text = "Prompt";
+                lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(flashcardID).Value.Item2;
+            }
+        }
 
         private void txtFlashcardsFlashcardID_TextChanged(object sender, EventArgs e)
         {
@@ -124,22 +151,89 @@ namespace FlashcardApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Database.GetNextFlashcardID() > 1)
+            try
             {
-                if (lblFlashcardsPromptAnswer.Text == "Prompt")
+                promptAnswerState = !promptAnswerState;
+                this.updateFlashcard(currentFlashcardID, promptAnswerState);
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void btnFlashcardsView_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int selectedFlashcardID = Convert.ToInt32(txtFlashcardsFlashcardID.Text);
+
+                // Check if the flashcard exists before opening edit mode
+                var flashcards = Database.GetAllFlashcards();
+                bool exists = flashcards.Any(f => f.Item1 == selectedFlashcardID);
+
+                if (!exists)
                 {
-                    lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item3;
-                    lblFlashcardsID.Text = "ID: " + Database.GetFlashcardByID(currentFlashcardID).Value.Item1;
-                    lblFlashcardsCategory.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item4;
-                    lblFlashcardsPromptAnswer.Text = "Answer";
+                    MessageBox.Show("⚠️ This Flashcard ID does not exist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
                 else
                 {
-                    lblFlashcardsPromptAnswerTxt.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item2;
-                    lblFlashcardsID.Text = "ID: " + Database.GetFlashcardByID(currentFlashcardID).Value.Item1;
-                    lblFlashcardsCategory.Text = Database.GetFlashcardByID(currentFlashcardID).Value.Item4;
-                    lblFlashcardsPromptAnswer.Text = "Prompt";
+                    currentFlashcardID = selectedFlashcardID;
+                    this.updateFlashcard(selectedFlashcardID, promptAnswerState);
+                    List<(int, string, string, string)> temp = Database.GetAllFlashcards();
+                    flashcardList.Clear();
+                    if (Database.GetAllFlashcards().Count > 0)
+                    {
+                        for (int i = 0; i < temp.Count; i++)
+                        {
+                            flashcardList.Add(Convert.ToInt32(temp[i].Item1));
+                        }
+                    }
+                    for (int i = 0; i < flashcardList.Count; i++)
+                    {
+                        if (currentFlashcardID == Convert.ToInt32(flashcardList[i]))
+                        {
+                            flashcardListIndex = i;
+                        }
+                    }
                 }
+            }
+            catch
+            {
+                MessageBox.Show("Invalid Flashcard ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnFlashcardsNext_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.updateFlashcard(Convert.ToInt32(flashcardList[flashcardListIndex + 1]), promptAnswerState);
+                currentFlashcardID = Convert.ToInt32(flashcardList[flashcardListIndex + 1]);
+                flashcardListIndex = flashcardListIndex + 1;
+            }
+            catch
+            {
+                MessageBox.Show("You have reached the end of the list!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                currentFlashcardID = Convert.ToInt32(flashcardList[flashcardList.Count - 1]);
+                flashcardListIndex = Convert.ToInt32(flashcardList.Count - 1);
+            }
+        }
+
+        private void btnFlashcardsBack_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.updateFlashcard(Convert.ToInt32(flashcardList[flashcardListIndex - 1]), promptAnswerState);
+                currentFlashcardID = Convert.ToInt32(flashcardList[flashcardListIndex - 1]);
+                flashcardListIndex = flashcardListIndex - 1;
+            }
+            catch
+            {
+                MessageBox.Show("You have reached the end of the list!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                currentFlashcardID = Convert.ToInt32(flashcardList[0]);
+                flashcardListIndex = Convert.ToInt32(0);
             }
         }
     }

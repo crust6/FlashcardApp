@@ -42,6 +42,8 @@
             this.lblFlashcardsID = new System.Windows.Forms.Label();
             this.lblFlashcardsCategory = new System.Windows.Forms.Label();
             this.lblFlashcardsPromptAnswer = new System.Windows.Forms.Label();
+            this.btnFlashcardsBack = new System.Windows.Forms.Button();
+            this.btnFlashcardsNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnFlashcardsToHome
@@ -113,6 +115,7 @@
             this.btnFlashcardsView.TabIndex = 14;
             this.btnFlashcardsView.Text = "View Card";
             this.btnFlashcardsView.UseVisualStyleBackColor = false;
+            this.btnFlashcardsView.Click += new System.EventHandler(this.btnFlashcardsView_Click);
             // 
             // txtFlashcardsEnterValidCategory
             // 
@@ -151,7 +154,7 @@
             this.btnFlashcardsFlashcard.FlatAppearance.BorderSize = 10;
             this.btnFlashcardsFlashcard.Location = new System.Drawing.Point(30, 29);
             this.btnFlashcardsFlashcard.Name = "btnFlashcardsFlashcard";
-            this.btnFlashcardsFlashcard.Size = new System.Drawing.Size(627, 446);
+            this.btnFlashcardsFlashcard.Size = new System.Drawing.Size(627, 425);
             this.btnFlashcardsFlashcard.TabIndex = 23;
             this.btnFlashcardsFlashcard.UseVisualStyleBackColor = true;
             this.btnFlashcardsFlashcard.Click += new System.EventHandler(this.button1_Click);
@@ -161,7 +164,7 @@
             this.lblFlashcardsPromptAnswerTxt.AutoSize = true;
             this.lblFlashcardsPromptAnswerTxt.BackColor = System.Drawing.Color.White;
             this.lblFlashcardsPromptAnswerTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFlashcardsPromptAnswerTxt.Location = new System.Drawing.Point(104, 254);
+            this.lblFlashcardsPromptAnswerTxt.Location = new System.Drawing.Point(104, 238);
             this.lblFlashcardsPromptAnswerTxt.Name = "lblFlashcardsPromptAnswerTxt";
             this.lblFlashcardsPromptAnswerTxt.Size = new System.Drawing.Size(58, 24);
             this.lblFlashcardsPromptAnswerTxt.TabIndex = 24;
@@ -194,17 +197,41 @@
             this.lblFlashcardsPromptAnswer.AutoSize = true;
             this.lblFlashcardsPromptAnswer.BackColor = System.Drawing.Color.White;
             this.lblFlashcardsPromptAnswer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFlashcardsPromptAnswer.Location = new System.Drawing.Point(46, 440);
+            this.lblFlashcardsPromptAnswer.Location = new System.Drawing.Point(46, 415);
             this.lblFlashcardsPromptAnswer.Name = "lblFlashcardsPromptAnswer";
             this.lblFlashcardsPromptAnswer.Size = new System.Drawing.Size(66, 20);
             this.lblFlashcardsPromptAnswer.TabIndex = 27;
             this.lblFlashcardsPromptAnswer.Text = "Prompt";
+            // 
+            // btnFlashcardsBack
+            // 
+            this.btnFlashcardsBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFlashcardsBack.Location = new System.Drawing.Point(30, 460);
+            this.btnFlashcardsBack.Name = "btnFlashcardsBack";
+            this.btnFlashcardsBack.Size = new System.Drawing.Size(75, 23);
+            this.btnFlashcardsBack.TabIndex = 28;
+            this.btnFlashcardsBack.Text = "Back";
+            this.btnFlashcardsBack.UseVisualStyleBackColor = true;
+            this.btnFlashcardsBack.Click += new System.EventHandler(this.btnFlashcardsBack_Click);
+            // 
+            // btnFlashcardsNext
+            // 
+            this.btnFlashcardsNext.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFlashcardsNext.Location = new System.Drawing.Point(582, 460);
+            this.btnFlashcardsNext.Name = "btnFlashcardsNext";
+            this.btnFlashcardsNext.Size = new System.Drawing.Size(75, 23);
+            this.btnFlashcardsNext.TabIndex = 29;
+            this.btnFlashcardsNext.Text = "Next";
+            this.btnFlashcardsNext.UseVisualStyleBackColor = true;
+            this.btnFlashcardsNext.Click += new System.EventHandler(this.btnFlashcardsNext_Click);
             // 
             // frmFlashcards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(934, 561);
+            this.Controls.Add(this.btnFlashcardsNext);
+            this.Controls.Add(this.btnFlashcardsBack);
             this.Controls.Add(this.lblFlashcardsPromptAnswer);
             this.Controls.Add(this.lblFlashcardsCategory);
             this.Controls.Add(this.lblFlashcardsID);
@@ -243,5 +270,7 @@
         private System.Windows.Forms.Label lblFlashcardsID;
         private System.Windows.Forms.Label lblFlashcardsCategory;
         private System.Windows.Forms.Label lblFlashcardsPromptAnswer;
+        private System.Windows.Forms.Button btnFlashcardsBack;
+        private System.Windows.Forms.Button btnFlashcardsNext;
     }
 }

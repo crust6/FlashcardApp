@@ -11,24 +11,24 @@
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmflashcards.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\frmcreateedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmcreateedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\frmcreateedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmcreateedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\frmcreateedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmcreateedit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|solutionrelative:flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF141206-865E-4830-B318-99B223D58507}|FlashcardApp\\FlashcardApp.csproj|C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\flashcardapp\\frmhomepage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -50,19 +50,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "frmHomePage.cs",
               "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmHomePage.cs",
               "RelativeDocumentMoniker": "FlashcardApp\\frmHomePage.cs",
               "ToolTip": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmHomePage.cs",
               "RelativeToolTip": "FlashcardApp\\frmHomePage.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAADwvzkAAABFAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwDkAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T17:45:50.443Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "frmCreateEdit.cs [Design]",
               "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmCreateEdit.cs",
               "RelativeDocumentMoniker": "FlashcardApp\\frmCreateEdit.cs",
@@ -85,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\Program.cs",
               "RelativeDocumentMoniker": "FlashcardApp\\Program.cs",
@@ -103,7 +103,7 @@
               "RelativeDocumentMoniker": "FlashcardApp\\frmFlashcards.cs",
               "ToolTip": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmFlashcards.cs",
               "RelativeToolTip": "FlashcardApp\\frmFlashcards.cs",
-              "ViewState": "AQIAAGcAAAAAAAAAAAAswIkAAABxAAAA",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAQwN0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-24T17:15:53.738Z",
               "EditorCaption": ""
@@ -116,13 +116,13 @@
               "RelativeDocumentMoniker": "FlashcardApp\\Database.cs",
               "ToolTip": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\Database.cs",
               "RelativeToolTip": "FlashcardApp\\Database.cs",
-              "ViewState": "AQIAAFAAAAAAAAAAAAAiwGMAAAAsAAAA",
+              "ViewState": "AQIAAIQAAAAAAAAAAAAAAJUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T17:07:37.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "frmCreateEdit.cs",
               "DocumentMoniker": "C:\\__Students\\Xu\\FlashcardApp\\FlashcardApp\\FlashcardApp\\frmCreateEdit.cs",
               "RelativeDocumentMoniker": "FlashcardApp\\frmCreateEdit.cs",
